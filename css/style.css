@@ -1,0 +1,350 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	LawGik | Law Firm HTML5 Template
+VERSION:	1.0.0
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+
+1. BASE
+
+    1.1. Typography
+
+-------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body {
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  letter-spacing: .5px;
+  color: #777777;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: 55px;
+}
+
+h2, .h2 {
+  font-size: 36px;
+}
+
+h3, .h3 {
+  font-size: 30px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+h5, .h5 {
+  font-size: 20px;
+}
+
+h6, .h6 {
+  font-size: 18px;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 23px 55px;
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 50px;
+}
+
+.btn-primary {
+  background-image: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 13px 40px 0px rgba(238, 85, 101, 0.38);
+}
+
+.btn-sm {
+  padding: 15px 30px;
+}
+
+body {
+  background: #f4f5f6;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  margin-bottom: 30px;
+}
+
+.section-title p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-nav {
+  padding: 20px 30px;
+  transition: .3s ease .02s;
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    padding: 15px 30px;
+  }
+}
+
+.main-nav .navbar-nav .nav-item .nav-link {
+  color: #b8afe6;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-nav .navbar-nav .nav-item .nav-link::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: -1;
+  transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+}
+
+.main-nav .navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+.main-nav .navbar-nav .nav-item .nav-link:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.main-nav .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+
+.main-nav .navbar-brand {
+  margin-right: 0;
+  text-align: center;
+}
+
+.main-nav .account-list {
+  margin-left: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.main-nav .account-list li.list-inline-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-nav .account-list li a {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.main-nav .account-list li a.btn-violate {
+  background: #805bcd;
+}
+
+.main-nav .navbar-toggler {
+  display: none;
+}
+
+.main-nav.nav-bg {
+  background: #723BC4;
+  padding: 5px 20px;
+  border: none;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
+}
+
+.main-nav.nav-bg .nav-link::before {
+  background: #e6e6e6 !important;
+}
+
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .5s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -150px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+.banner {
+  padding: 150px 0 180px;
+  background-image: url("../images/backgrounds/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.banner-text {
+  margin-top: 100px;
+}
+
+.banner-text h1, .banner-text p {
+  color: #fff;
+}
+
+.banner-text h1 {
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  line-height: 30px;
+  width: 65%;
+  margin-bottom: 60px;
+}
+
+.banner-image {
+  position: relative;
+}
+
+.banner-image .icon {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 85px;
+}
+
+.banner-image .love {
+  background-image: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  box-shadow: 0px 13px 40px 0px rgba(238, 85, 101, 0.38);
+  top: 7%;
+  left: 19%;
+}
+
+.banner-image .hand {
+  background-image: linear-gradient(90deg, #6da7fb 0%, #3f83f3 100%);
+  top: 24%;
+  right: -24%;
+}
+
+.banner-image .chat {
+  background-image: linear-gradient(90deg, #6da7fb 0%, #3f83f3 100%);
+  top: 55%;
+  left: 4%;
+}
+
+.banner-image .message {
+  background-image: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  box-shadow: 0px 13px 40px 0px rgba(238, 85, 101, 0.38);
+  top: 50%;
+  right: -7%;
+}
+
+.about-item {
+  padding: 70px 40px 90px;
+  transition: .3s ease;
+}
+
+.about-item .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0px 25px 25px 0px rgba(22, 25, 93, 0.07);
+  margin: 0 auto 45px;
+  transition: .3s ease;
+}
+
+.about-item .icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  transition: .3s ease;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: center center;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.about-item .icon i {
+  position: relative;
+  z-index: 2;
+  line-height: 80px;
+  font-size: 30px;
+}
+
+.about-item .icon i::before {
+  transition: .3s ease;
+  background-image: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-item h4 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.about-item p {
+  line-height: 28px;
+}
+
+.about-item:hover {
+  background: #fff;
+  box-shadow: 0px 25px 25px 0px rgba(22, 25, 93, 0.07);
+}
+
+.about-item:hover .icon {
+  box-shadow: 0px 13px 40px 0px rgba(238, 85, 101, 0.38);
+}
+
+.about-item:hover .icon::before {
+  transform: scale(1);
+}
+
+.about-item:hover .icon i::before {
+  background-image: unset;
+  background-clip: none;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: #fff;
+}
+
+/*# sourceMappingURL=maps/style.css.map */
