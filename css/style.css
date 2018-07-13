@@ -60,7 +60,7 @@ h6, .h6 {
   font-size: 16px;
   border-radius: 0;
   text-transform: uppercase;
-  padding: 23px 55px;
+  padding: 18px 55px;
   border: none;
   letter-spacing: 1px;
   border-radius: 50px;
@@ -345,6 +345,48 @@ body {
   background-clip: none;
   -webkit-background-clip: none;
   -webkit-text-fill-color: #fff;
+}
+
+.cta {
+  position: relative;
+}
+
+.cta .right-shape {
+  position: absolute;
+  right: 0;
+  top: -27%;
+  width: 60%;
+  height: 100%;
+  z-index: -2;
+}
+
+.cta .right-shape img {
+  width: 100%;
+  height: auto;
+}
+
+.cta-image {
+  position: relative;
+}
+
+.cta-image .background {
+  position: absolute;
+  top: -5%;
+  left: -15%;
+  z-index: -1;
+}
+
+.cta-content h2 {
+  margin-bottom: 27px;
+}
+
+.cta-content p {
+  line-height: 28px;
+  margin-bottom: 60px;
+}
+
+.cta-content p a {
+  color: #6643ec;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
