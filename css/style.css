@@ -354,7 +354,7 @@ body {
 .cta .right-shape {
   position: absolute;
   right: 0;
-  top: -27%;
+  bottom: 27%;
   width: 60%;
   height: 100%;
   z-index: -2;
@@ -387,6 +387,124 @@ body {
 
 .cta-content p a {
   color: #6643ec;
+}
+
+.steps {
+  padding: 200px 0 100px;
+}
+
+.steps-text h2 {
+  margin-bottom: 27px;
+}
+
+.steps-text p {
+  margin-bottom: 45px;
+  line-height: 28px;
+}
+
+.steps-content {
+  background: #fff;
+  padding: 40px 15px;
+  box-shadow: 0px 25px 25px 0px rgba(22, 25, 93, 0.07);
+  border-radius: 4px;
+  position: relative;
+}
+
+.steps-content::before, .steps-content::after {
+  position: absolute;
+  content: '';
+  width: calc(100% - 80px);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%;
+  height: 50px;
+  background: #f8f8fa;
+  border-radius: 4px;
+}
+
+.steps-content::after {
+  top: 80%;
+}
+
+.steps-content .line::before, .steps-content .line::after {
+  position: absolute;
+  content: '';
+  width: 55%;
+  left: 40px;
+  top: 45%;
+  height: 50px;
+  background: #f8f8fa;
+  border-radius: 4px;
+}
+
+.steps-content .line::after {
+  width: 70%;
+  top: 63%;
+}
+
+.steps-content .background {
+  position: absolute;
+  z-index: -1;
+  left: -180px;
+  top: -150px;
+}
+
+.steps-content .step-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #fff;
+  box-shadow: 0px 25px 25px 0px rgba(22, 25, 93, 0.07);
+  padding: 25px 20px;
+  transform: translateX(-80px);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.steps-content .step-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.steps-content .step-item .number {
+  margin-right: 20px;
+}
+
+.steps-content .step-item .number span {
+  width: 66px;
+  height: 66px;
+  text-align: center;
+  background: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  display: block;
+  line-height: 66px;
+  font-size: 25px;
+  color: #fff;
+  box-shadow: 0px 13px 40px 0px rgba(238, 85, 101, 0.38);
+  border-radius: 50%;
+}
+
+.steps-content .step-item .content h6 {
+  margin-bottom: 0;
+  color: #777777;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.steps-content .step-item.featured {
+  background: linear-gradient(67deg, #943ec7 0%, #3c37bf 100%);
+  transform: translateX(-180px);
+  box-shadow: 0px 34px 46px 0px rgba(22, 25, 93, 0.23);
+}
+
+.steps-content .step-item.featured .number span {
+  background: #fff;
+  color: #943ec7;
+  box-shadow: 0px 25px 25px 0px rgba(22, 25, 93, 0.07);
+}
+
+.steps-content .step-item.featured .content h6, .steps-content .step-item.featured .content p {
+  color: #fff;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
