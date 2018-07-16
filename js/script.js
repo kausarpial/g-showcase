@@ -11,6 +11,14 @@
     // -----------------------------
     AOS.init();
 
+    // Testimonial Slider
+    $('.testimonial-slider').slick({
+        dots: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
     // Smooth Scroll to Section
     $('a.page-scroll').on('click', function (event) {
         var $anchor = $(this);
