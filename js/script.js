@@ -16,7 +16,8 @@
         dots: true,
         speed: 300,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true
     });
 
     // Smooth Scroll to Section
