@@ -508,6 +508,165 @@ body {
   color: #fff;
 }
 
+.audience {
+  padding: 250px 0 200px;
+}
+
+.audience-logo {
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.audience-logo .borders {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 1px solid #e8eaed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.audience-logo .borders::before, .audience-logo .borders::after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #e8eaed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.audience-logo .borders::before {
+  width: 420px;
+  height: 420px;
+}
+
+.audience-logo .borders::after {
+  width: 620px;
+  height: 620px;
+}
+
+.audience-logo img {
+  border-radius: 50%;
+  box-shadow: 0px 34px 46px 0px rgba(70, 56, 192, 0.16);
+}
+
+.audience-logo .icon {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.audience-logo .icon.hand {
+  width: 85px;
+  height: 85px;
+  background: linear-gradient(90deg, #6da7fb 0%, #3f83f3 100%);
+  line-height: 85px;
+  top: -100%;
+  right: 18%;
+  box-shadow: 0px 34px 26px 0px rgba(70, 172, 233, 0.17);
+}
+
+.audience-logo .icon.eye {
+  width: 85px;
+  height: 85px;
+  background: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  line-height: 85px;
+  box-shadow: 0px 34px 26px 0px rgba(238, 85, 101, 0.14);
+  top: -90%;
+  left: 16%;
+}
+
+.audience-logo .icon.love-left {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(67deg, #943ec7 0%, #3c37bf 100%);
+  line-height: 65px;
+  top: 50%;
+  left: -3%;
+  box-shadow: 0px 34px 46px 0px rgba(70, 56, 192, 0.33);
+}
+
+.audience-logo .icon.love-left img {
+  width: 35px;
+  height: auto;
+}
+
+.audience-logo .icon.plus {
+  width: 83px;
+  height: 83px;
+  background: linear-gradient(67deg, #943ec7 0%, #3c37bf 100%);
+  line-height: 83px;
+  box-shadow: 0px 34px 46px 0px rgba(70, 56, 192, 0.33);
+  top: 25%;
+  right: -5%;
+}
+
+.audience-logo .icon.love-right {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  background: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  box-shadow: 0px 34px 26px 0px rgba(238, 85, 101, 0.14);
+  top: -30%;
+  right: -35%;
+}
+
+.audience-logo .icon.love-right img {
+  width: 35px;
+  transform: rotate(25deg);
+}
+
+.audience-logo .icon.chat {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  right: -45%;
+  top: 100%;
+  background: linear-gradient(90deg, #6da7fb 0%, #3f83f3 100%);
+  box-shadow: 0px 34px 26px 0px rgba(70, 172, 233, 0.17);
+}
+
+.audience-logo .icon.chat img {
+  width: 30px;
+}
+
+.audience-logo .icon.message {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  background: linear-gradient(90deg, #6da7fb 0%, #3f83f3 100%);
+  box-shadow: 0px 34px 26px 0px rgba(70, 172, 233, 0.17);
+  left: -35%;
+  top: -35%;
+}
+
+.audience-logo .icon.message img {
+  width: 35px;
+  height: auto;
+}
+
+.audience-logo .icon.user {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  top: 110%;
+  left: -45%;
+  background: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  box-shadow: 0px 34px 26px 0px rgba(238, 85, 101, 0.14);
+}
+
+.audience-content {
+  position: relative;
+  z-index: 2;
+}
+
+.audience-content h2 {
+  margin-bottom: 35px;
+}
+
 .testimonial {
   position: relative;
   padding: 120px 0 200px;
@@ -628,7 +787,7 @@ body {
 
 .footer-content ul.links {
   padding-bottom: 50px;
-  border-width: 0 0 1px 0;
+  border-width: 0 0 2px 0;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 25px;
