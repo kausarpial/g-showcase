@@ -20,6 +20,10 @@
         autoplay: true
     });
 
+    $('.about-item').matchHeight({
+        byRow: 0
+    });
+
     // Smooth Scroll to Section
     $('a.page-scroll').on('click', function (event) {
         var $anchor = $(this);
