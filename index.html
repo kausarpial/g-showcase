@@ -29,8 +29,20 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#mainNav" data-offset="60">
+<body data-spy="scroll" data-target="#mainNav" data-offset="60" class="hidden">
   
+
+<!-- Preloader -->
+<div class="preloader-wrap">
+    <div class="outer">
+        <div class="inner">
+            <div class="percentage" id="precent"></div>
+            <div class="preloader-text">
+                Gramista will get you real Instagram likes and followers that are genuinely in love with your profile.
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Navbar Start -->
 <nav class="main-nav navbar navbar-expand-lg fixed-top">
@@ -90,18 +102,20 @@
                 </div>
             </div>
             <div class="col-lg-5 ml-auto text-right">
-                <div class="banner-image">
-                    <img src="images/banner-phone.png" alt="banner-phone">
-                    <div class="icon love">
+                <div class="banner-image" id="icons">
+                    <div class="image layer" data-depth="0.10">
+                        <img src="images/banner-phone.png" alt="banner-phone">
+                    </div>
+                    <div class="icon love layer" data-depth="1.00">
                         <img src="images/icons/love.svg" alt="love-icon">
                     </div>
-                    <div class="icon hand">
+                    <div class="icon hand layer" data-depth="0.50">
                         <img src="images/icons/hand.svg" alt="hand-icon">
                     </div>
-                    <div class="icon chat">
+                    <div class="icon chat layer" data-depth="1.00">
                         <img src="images/icons/chat.svg" alt="chat-icon">
                     </div>
-                    <div class="icon message">
+                    <div class="icon message layer" data-depth="0.50">
                         <img src="images/icons/message.svg" alt="chat-icon">
                     </div>
                 </div>
@@ -124,7 +138,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="300">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                 <!-- About Item -->
                 <div class="about-item text-center">
                     <div class="icon">
@@ -138,7 +152,7 @@
             </div>
             <div class="col-lg-4">
                 <!-- About Item -->
-                <div class="about-item text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                <div class="about-item text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div class="icon">
                         <i class="icon-mask"></i>
                     </div>
@@ -148,7 +162,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                 <!-- About Item -->
                 <div class="about-item text-center">
                     <div class="icon">
@@ -399,7 +413,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4" data-aos="slide-up" data-aos-once="true">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                 <article class="post">
                     <div class="post-thumb">
                         <img src="images/blog/post-thumb-01.png" alt="post-thumb">
@@ -411,7 +425,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-lg-4" data-aos="slide-up" data-aos-once="true" data-aos-delay="100">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                 <article class="post">
                     <div class="post-thumb">
                         <img src="images/blog/post-thumb-02.png" alt="post-thumb">
@@ -423,7 +437,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-lg-4" data-aos="slide-up" data-aos-once="true" data-aos-delay="200">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
                 <article class="post">
                     <div class="post-thumb">
                         <img src="images/blog/post-thumb-03.png" alt="post-thumb">
@@ -473,6 +487,10 @@
 <script src="plugins/aos/aos.js"></script>
 <!-- Headroom Js -->
 <script src="plugins/headroomjs/headroom.min.js"></script>
+<!-- TweenMax Js -->
+<script src="plugins/tweenmax/tweenmax.min.js"></script>
+<!-- Parallax -->
+<script src="plugins/parallax/parallax.min.js"></script>
 <!-- Main Script -->
 <script src="js/script.js"></script>
 </body>
