@@ -29,7 +29,16 @@ $(document).ready(function () {
         event.preventDefault();
     });
     
-    new Parallax(document.getElementById('icons'));
+    // -----------------------------
+    //  Parallax Scene
+    // -----------------------------
+    var scene = $('#icons').get(0);
+    var parallaxInstance = new Parallax(scene);
+    parallaxInstance.friction(0.2, 0.2);
+
+    var scene2 = $('#audience').get(0);
+    var parallaxInstance2 = new Parallax(scene2);
+    parallaxInstance2.friction(0.2, 0.2);
 
     // -----------------------------
     //  AOS Initialize

@@ -558,17 +558,18 @@ body.hidden {
 .audience-logo {
   margin-bottom: 70px;
   position: relative;
+  height: 112px;
 }
 
 .audience-logo .borders {
-  position: absolute;
+  position: absolute !important;
   width: 230px;
   height: 230px;
   border-radius: 50%;
   border: 1px solid #e8eaed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
 }
 
 .audience-logo .borders::before, .audience-logo .borders::after {
@@ -578,7 +579,7 @@ body.hidden {
   border: 1px solid #e8eaed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   z-index: -1;
 }
 
@@ -592,7 +593,13 @@ body.hidden {
   height: 620px;
 }
 
-.audience-logo img {
+.audience-logo .logo {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.audience-logo .logo img {
   border-radius: 50%;
   box-shadow: 0px 34px 46px 0px rgba(70, 56, 192, 0.16);
 }
@@ -607,8 +614,9 @@ body.hidden {
   height: 85px;
   background: linear-gradient(90deg, #6da7fb 0%, #3f83f3 100%);
   line-height: 85px;
-  top: -100%;
+  top: -100% !important;
   right: 18%;
+  left: unset !important;
   box-shadow: 0px 34px 26px 0px rgba(70, 172, 233, 0.17);
 }
 
@@ -618,8 +626,8 @@ body.hidden {
   background: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
   line-height: 85px;
   box-shadow: 0px 34px 26px 0px rgba(238, 85, 101, 0.14);
-  top: -90%;
-  left: 16%;
+  top: -90% !important;
+  left: 16% !important;
 }
 
 .audience-logo .icon.love-left {
@@ -627,8 +635,8 @@ body.hidden {
   height: 65px;
   background: linear-gradient(67deg, #943ec7 0%, #3c37bf 100%);
   line-height: 65px;
-  top: 50%;
-  left: -3%;
+  top: 50% !important;
+  left: -3% !important;
   box-shadow: 0px 34px 46px 0px rgba(70, 56, 192, 0.33);
 }
 
@@ -643,8 +651,9 @@ body.hidden {
   background: linear-gradient(67deg, #943ec7 0%, #3c37bf 100%);
   line-height: 83px;
   box-shadow: 0px 34px 46px 0px rgba(70, 56, 192, 0.33);
-  top: 25%;
+  top: 25% !important;
   right: -5%;
+  left: unset !important;
 }
 
 .audience-logo .icon.love-right {
@@ -653,8 +662,9 @@ body.hidden {
   line-height: 65px;
   background: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
   box-shadow: 0px 34px 26px 0px rgba(238, 85, 101, 0.14);
-  top: -30%;
+  top: -30% !important;
   right: -35%;
+  left: unset !important;
 }
 
 .audience-logo .icon.love-right img {
@@ -667,7 +677,8 @@ body.hidden {
   height: 55px;
   line-height: 55px;
   right: -45%;
-  top: 100%;
+  top: 100% !important;
+  left: unset !important;
   background: linear-gradient(90deg, #6da7fb 0%, #3f83f3 100%);
   box-shadow: 0px 34px 26px 0px rgba(70, 172, 233, 0.17);
 }
@@ -682,8 +693,8 @@ body.hidden {
   line-height: 65px;
   background: linear-gradient(90deg, #6da7fb 0%, #3f83f3 100%);
   box-shadow: 0px 34px 26px 0px rgba(70, 172, 233, 0.17);
-  left: -35%;
-  top: -35%;
+  left: -35% !important;
+  top: -35% !important;
 }
 
 .audience-logo .icon.message img {
@@ -695,8 +706,8 @@ body.hidden {
   width: 55px;
   height: 55px;
   line-height: 55px;
-  top: 110%;
-  left: -45%;
+  top: 110% !important;
+  left: -45% !important;
   background: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
   box-shadow: 0px 34px 26px 0px rgba(238, 85, 101, 0.14);
 }
