@@ -186,8 +186,13 @@ body.hidden {
   transform: translateX(-50%) translateY(-10px);
 }
 
-.main-nav .navbar-nav .nav-item:last-child .nav-link {
-  padding-right: 0;
+.main-nav .navbar-nav .nav-item .nav-link.active {
+  color: #fff;
+}
+
+.main-nav .navbar-nav .nav-item .nav-link.active::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
 }
 
 .main-nav .navbar-brand {
@@ -196,7 +201,7 @@ body.hidden {
 }
 
 .main-nav .account-list {
-  margin-left: 100px;
+  margin-left: 85px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -253,6 +258,12 @@ body.hidden {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
+}
+
+@media (min-width: 2000px) {
+  .banner {
+    padding: 200px 0 230px;
+  }
 }
 
 .banner-text {
@@ -394,6 +405,12 @@ body.hidden {
   position: relative;
 }
 
+@media (min-width: 2000px) {
+  .cta {
+    padding: 170px 0;
+  }
+}
+
 .cta .right-shape {
   position: absolute;
   right: 0;
@@ -401,6 +418,12 @@ body.hidden {
   width: 60%;
   height: 100%;
   z-index: -2;
+}
+
+@media (min-width: 2000px) {
+  .cta .right-shape {
+    bottom: 42%;
+  }
 }
 
 .cta .right-shape img {
@@ -834,6 +857,12 @@ body.hidden {
   background-position: top center;
 }
 
+@media (min-width: 2000px) {
+  .footer {
+    padding: 220px 0 190px;
+  }
+}
+
 .footer-content img {
   display: block;
   margin: 0 auto 45px;
@@ -849,6 +878,28 @@ body.hidden {
 
 .footer-content ul.links li.list-inline-item a {
   color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-content ul.links li.list-inline-item a::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 8px;
+  background: linear-gradient(90deg, #ee445f 0%, #f67d4d 100%);
+  z-index: -1;
+  left: 0;
+  bottom: 4px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .3s ease-in-out;
+}
+
+.footer-content ul.links li.list-inline-item a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .footer-content ul.links li.list-inline-item:not(:last-child) {

@@ -2,6 +2,7 @@ $(document).ready(function () {
     'use strict';
     
     PageLoad();
+    smoothScroll()
     // -----------------------------
     //  Headroom Initialize
     // -----------------------------
@@ -13,7 +14,8 @@ $(document).ready(function () {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true
+        autoplay: true,
+        arrows: false
     });
     
     $('.about-item').matchHeight({
@@ -36,7 +38,7 @@ $(document).ready(function () {
     var parallaxInstance = new Parallax(scene);
     parallaxInstance.friction(0.2, 0.2);
 
-    var scene2 = $('#audience').get(0);
+    var scene2 = $('#audienceIcons').get(0);
     var parallaxInstance2 = new Parallax(scene2);
     parallaxInstance2.friction(0.2, 0.2);
 
@@ -104,3 +106,16 @@ function PageLoad() {
 
 
 }// End Page Load	
+
+// -----------------------------
+// Smmoth Scroll
+// -----------------------------
+function smoothScroll() {
+    $('a.page-scroll').on('click', function (event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 0)
+        }, 1500);
+        event.preventDefault();
+    });
+}
