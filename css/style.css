@@ -1017,12 +1017,126 @@ body {
   margin-bottom: 5px;
 }
 
+.post-pagination {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.post-pagination:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: #dedede;
+}
+
+.post-pagination .block {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.post-pagination .block:first-child {
+  padding-right: 50px;
+}
+
+.post-pagination .block:first-child .post-image {
+  margin-right: 20px;
+}
+
+.post-pagination .block:last-child {
+  padding-left: 50px;
+  text-align: right;
+}
+
+.post-pagination .block:last-child .post-image {
+  margin-left: 20px;
+}
+
+.post-pagination .block .post-image img {
+  width: 105px;
+  height: auto;
+}
+
+.post-pagination .block h6, .post-pagination .block a {
+  font-size: 14px;
+}
+
+.post-pagination .block a {
+  color: #777777;
+}
+
 .featured-image {
   margin-bottom: 30px;
 }
 
 .single-blog {
   padding: 170px 0 100px;
+}
+
+.author {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 20px 0;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #dedede;
+  margin-bottom: 30px;
+}
+
+.author .thumb {
+  margin-right: 20px;
+}
+
+.author .thumb img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #dedede;
+}
+
+.author .block {
+  position: relative;
+}
+
+.author .block h6 {
+  font-size: 14px;
+}
+
+.author .block ul.social-links {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.author .block ul.social-links li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.author .block ul.social-links li a.facebook {
+  color: #3b5999;
+}
+
+.author .block ul.social-links li a.twitter {
+  color: #55acee;
+}
+
+.author .block ul.social-links li a.instagram {
+  color: #e4405f;
+}
+
+.author .block ul.social-links li a.linkedin {
+  color: #007bb6;
 }
 
 .footer {
