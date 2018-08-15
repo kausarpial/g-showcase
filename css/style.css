@@ -496,7 +496,12 @@ body {
 
 .cta {
   position: relative;
-  overflow-x: hidden;
+}
+
+@media (max-width: 575px) {
+  .cta {
+    overflow-x: hidden;
+  }
 }
 
 @media (min-width: 2000px) {
